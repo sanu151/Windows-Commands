@@ -219,6 +219,8 @@ CLS
 
 - **type** : display the contents of one or more text files directly to the command prompt or to another command by piping its output.
 
+  Example: type myfile.txt
+
  > Displaying the contents of a single file:
 ```
 C:\Users\dassu\windowsCommands>type newNamedFile.txt
