@@ -139,3 +139,70 @@ C:\Users\dassu\windowsCommands\testFolder>dir
                2 Dir(s)  108,623,585,280 bytes free
 ```
 
+- **move**: Moves one or more files from one location to another.
+
+Example: move file2.txt C:\NewLocation (moves "file2.txt" to "NewLocation")
+
+```
+C:\Users\dassu\windowsCommands>move test3.txt testFolder
+        1 file(s) moved.
+
+C:\Users\dassu\windowsCommands>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 5633-654B
+
+ Directory of C:\Users\dassu\windowsCommands
+
+14-04-2024  07:33 PM    <DIR>          .
+14-04-2024  06:54 PM    <DIR>          ..
+14-04-2024  06:58 PM                13 test2.txt
+14-04-2024  07:33 PM    <DIR>          testFolder
+               1 File(s)             13 bytes
+               3 Dir(s)  108,623,994,880 bytes free
+
+C:\Users\dassu\windowsCommands>cd testFolder
+
+C:\Users\dassu\windowsCommands\testFolder>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 5633-654B
+
+ Directory of C:\Users\dassu\windowsCommands\testFolder
+
+14-04-2024  07:33 PM    <DIR>          .
+14-04-2024  07:33 PM    <DIR>          ..
+14-04-2024  06:58 PM                13 test2.txt
+14-04-2024  06:58 PM                13 test3.txt
+               2 File(s)             26 bytes
+               2 Dir(s)  108,623,994,880 bytes free
+```
+
+- **ren**: Renames a file or directory.
+
+Example: ren oldname.txt newname.txt (renames "oldname.txt" to "newname.txt")
+
+```
+ Directory of C:\Users\dassu\windowsCommands
+
+14-04-2024  07:33 PM    <DIR>          .
+14-04-2024  06:54 PM    <DIR>          ..
+14-04-2024  06:58 PM                13 test2.txt
+14-04-2024  07:33 PM    <DIR>          testFolder
+               1 File(s)             13 bytes
+               3 Dir(s)  108,623,339,520 bytes free
+
+C:\Users\dassu\windowsCommands>ren test2.txt newNamedFile.txt
+
+C:\Users\dassu\windowsCommands>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 5633-654B
+
+ Directory of C:\Users\dassu\windowsCommands
+
+14-04-2024  07:35 PM    <DIR>          .
+14-04-2024  06:54 PM    <DIR>          ..
+14-04-2024  06:58 PM                13 newNamedFile.txt
+14-04-2024  07:33 PM    <DIR>          testFolder
+               1 File(s)             13 bytes
+               3 Dir(s)  108,623,204,352 bytes free
+```
+
