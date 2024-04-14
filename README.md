@@ -115,3 +115,27 @@ C:\Users\dassu\windowsCommands>dir
                2 File(s)             26 bytes
                3 Dir(s)  108,616,282,112 bytes free
 ```
+
+- **copy**: Copies one or more files from one location to another.
+
+Example: copy file1.txt C:\DestinationFolder (copies "file1.txt" to "DestinationFolder")
+
+```
+C:\Users\dassu\windowsCommands>copy test2.txt testFolder
+        1 file(s) copied.
+
+C:\Users\dassu\windowsCommands>cd testFolder
+
+C:\Users\dassu\windowsCommands\testFolder>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 5633-654B
+
+ Directory of C:\Users\dassu\windowsCommands\testFolder
+
+14-04-2024  07:28 PM    <DIR>          .
+14-04-2024  07:22 PM    <DIR>          ..
+14-04-2024  06:58 PM                13 test2.txt
+               1 File(s)             13 bytes
+               2 Dir(s)  108,623,585,280 bytes free
+```
+
