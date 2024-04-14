@@ -302,4 +302,10 @@ C:\Users\dassu\windowsCommands>echo "Hello World" > newNamedFile.txt
 
 C:\Users\dassu\windowsCommands>type newNamedFile.txt
 "Hello World"
+
+C:\Users\dassu\windowsCommands>echo My name is Supriyo Das >> newNamedFile.txt
+
+C:\Users\dassu\windowsCommands>type newNamedFile.txt
+"Hello World"
+My name is Supriyo Das
 ```
