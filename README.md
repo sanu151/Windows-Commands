@@ -5,7 +5,7 @@
 
 __Basic File and Directory Navigation:__
 
-- **dir**: List directory contents
+- **dir**: Lists the files and directories in the current directory.
 
 ```
 C:\Users\dassu\windowsCommands>dir
@@ -23,7 +23,9 @@ C:\Users\dassu\windowsCommands>dir
                2 Dir(s)  108,630,683,648 bytes free
 ```
 
-- **cd**: Change directory (e.g., cd testFolder)
+- **cd**: Changes the current directory.
+
+Example: cd Documents (changes to the Documents directory)
 ```
  Directory of C:\Users\dassu\windowsCommands
 
@@ -39,4 +41,77 @@ C:\Users\dassu\windowsCommands>dir
 C:\Users\dassu\windowsCommands>cd testFolder
 
 C:\Users\dassu\windowsCommands\testFolder>
+
+C:\Users\dassu\windowsCommands\testFolder>cd ..
+
+C:\Users\dassu\windowsCommands>
+```
+
+- **mkdir**: Creates a new directory.
+
+Example: mkdir NewFolder (creates a new folder named "NewFolder")
+```
+C:\Users\dassu\windowsCommands\testFolder>mkdir NewFolder
+
+C:\Users\dassu\windowsCommands\testFolder>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 5633-654B
+
+ Directory of C:\Users\dassu\windowsCommands\testFolder
+
+14-04-2024  07:08 PM    <DIR>          .
+14-04-2024  07:03 PM    <DIR>          ..
+14-04-2024  07:08 PM    <DIR>          NewFolder
+               0 File(s)              0 bytes
+               3 Dir(s)  108,627,693,568 bytes free
+```
+
+- **rmdir**: Removes a directory.
+
+Example: rmdir OldFolder (removes the folder named "OldFolder")
+```
+C:\Users\dassu\windowsCommands\testFolder>rmdir NewFolder
+
+C:\Users\dassu\windowsCommands\testFolder>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 5633-654B
+
+ Directory of C:\Users\dassu\windowsCommands\testFolder
+
+14-04-2024  07:18 PM    <DIR>          .
+14-04-2024  07:03 PM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  108,617,166,848 bytes free
+```
+
+- **del**: Deletes one or more files.
+
+Example: del file.txt (deletes a file named "file.txt")
+```
+ Directory of C:\Users\dassu\windowsCommands
+
+14-04-2024  07:03 PM    <DIR>          .
+14-04-2024  06:54 PM    <DIR>          ..
+14-04-2024  06:57 PM                13 test1.txt
+14-04-2024  06:58 PM                13 test2.txt
+14-04-2024  06:58 PM                13 test3.txt
+14-04-2024  07:18 PM    <DIR>          testFolder
+               3 File(s)             39 bytes
+               3 Dir(s)  108,616,282,112 bytes free
+
+C:\Users\dassu\windowsCommands>del test1.txt
+
+C:\Users\dassu\windowsCommands>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 5633-654B
+
+ Directory of C:\Users\dassu\windowsCommands
+
+14-04-2024  07:22 PM    <DIR>          .
+14-04-2024  06:54 PM    <DIR>          ..
+14-04-2024  06:58 PM                13 test2.txt
+14-04-2024  06:58 PM                13 test3.txt
+14-04-2024  07:18 PM    <DIR>          testFolder
+               2 File(s)             26 bytes
+               3 Dir(s)  108,616,282,112 bytes free
 ```
