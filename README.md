@@ -217,7 +217,7 @@ Clears the screen.
 CLS
 ```
 
-- ***type** : display the contents of one or more text files directly to the command prompt or to another command by piping its output.
+- **type** : display the contents of one or more text files directly to the command prompt or to another command by piping its output.
 
  > Displaying the contents of a single file:
 ```
