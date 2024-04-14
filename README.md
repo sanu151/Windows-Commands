@@ -1,5 +1,5 @@
 # Windows-Commands
-***40 essential Windows commands***
+***Essential Windows commands***
 
 *The Windows command line is one of the most powerful utilities on a Windows PC. With it, we can interact with the OS directly and do a lot of things not available in the graphical user interface (GUI).*
 
@@ -206,3 +206,100 @@ C:\Users\dassu\windowsCommands>dir
                3 Dir(s)  108,623,204,352 bytes free
 ```
 
+- **cls**: Clears the command prompt screen.
+
+Example: cls
+
+```
+C:\Users\dassu\windowsCommands>cls/?
+Clears the screen.
+
+CLS
+```
+
+- ***type** : display the contents of one or more text files directly to the command prompt or to another command by piping its output.
+
+ > Displaying the contents of a single file:
+```
+C:\Users\dassu\windowsCommands>type newNamedFile.txt
+"Hello World"
+```
+
+> Displaying the contents of multiple files:
+```
+C:\Users\dassu\windowsCommands\testFolder>type test2.txt test3.txt
+
+test2.txt
+
+
+This is test2.txt file
+
+test3.txt
+
+
+This is test3.txt file
+```
+
+> Redirecting the output to another file:
+```
+C:\Users\dassu\windowsCommands\testFolder>type test1.txt
+This is test1.txt file
+
+C:\Users\dassu\windowsCommands\testFolder>type test2.txt > test1.txt
+
+C:\Users\dassu\windowsCommands\testFolder>type test1.txt
+This is test2.txt file
+```
+
+> Piping the output to another command:
+```
+C:\Users\dassu\windowsCommands\testFolder>type test1.txt | find "test"
+This is test2.txt file
+```
+
+> Using wildcards to display multiple files:
+```
+C:\Users\dassu\windowsCommands\testFolder>type *.txt
+
+test1.txt
+
+
+This is test1.txt file
+
+test2.txt
+
+
+This is test2.txt file
+
+test3.txt
+
+
+This is test3.txt file
+```
+
+
+- **echo**: Displays messages or turns command echoing on or off.
+
+Example: echo Hello, World!
+
+*common uses of the echo command:*
+
+ > *Display a message*: We can use echo followed by the message we want to display.
+```
+C:\Users\dassu\windowsCommands>echo Hello World
+Hello World
+```
+
+> *Display environment variables*: You can use echo with the % symbol to display the value of an environment variable.
+```
+C:\Users\dassu\windowsCommands>echo %userName%
+dassu
+```
+
+> *Redirect output*: You can use echo with the redirection operators (> or >>) to write text to a file.
+```
+C:\Users\dassu\windowsCommands>echo "Hello World" > newNamedFile.txt
+
+C:\Users\dassu\windowsCommands>type newNamedFile.txt
+"Hello World"
+```
