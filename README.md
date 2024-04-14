@@ -1,9 +1,9 @@
 # Windows-Commands
 ***Essential Windows commands***
-
+** **
+** **
 *The Windows command line is one of the most powerful utilities on a Windows PC. With it, we can interact with the OS directly and do a lot of things not available in the graphical user interface (GUI).*
 
-** **
 ** **
 
 __Basic File and Directory Navigation:__
@@ -343,7 +343,6 @@ C:\Users\dassu\windowsCommands>dir
                4 Dir(s)  108,611,596,288 bytes free
 ```
 ** **
-** **
 __System Management:__
 
 - **tasklist**: Displays a list of currently running processes.
@@ -375,7 +374,6 @@ C:\Users\dassu\windowsCommands>taskkill /PID 9416 /F
 SUCCESS: The process with PID 9416 has been terminated.
 ```
 
-** **
 ** **
 
 __File and System Information:__
@@ -525,7 +523,6 @@ C:\Program Files\PowerShell\7\LICENSE.txt
 C:\Program Files\PowerShell\7\ThirdPartyNotices.txt
 ```
 
-** **
 ** **
 
 __Network and Connectivity:__
@@ -780,7 +777,7 @@ Configuration for interface "vEthernet (Default Switch)"
 
    **shutdown**: Shut down or restart the computer (e.g., shutdown /s /t 60 - shuts down in 60 seconds)
    ** **
-   ** **
+  
    __User Management:__
 
 - **net user**: Manage user accounts (add, remove, modify)
